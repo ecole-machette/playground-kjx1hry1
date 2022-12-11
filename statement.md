@@ -1,10 +1,15 @@
-# Welcome!
+# Exercice d'opération
 
-This PHP template lets you get started quickly with a simple one-page playground.
+Déterminez le prix TTC
 
 ```php runnable
 <?php
-echo "Hello World!";
+    // Prix en €
+   $prix_ht = 50;
+   // TVA en %
+   $tva = 20;
+   $prix_ttc = ($prix_ht * $tva / 100) + $prix_ht;
+   echo 'Le prix TTC du produit est de '.$prix_ttc.' €.';
 ?>
 ```
 
